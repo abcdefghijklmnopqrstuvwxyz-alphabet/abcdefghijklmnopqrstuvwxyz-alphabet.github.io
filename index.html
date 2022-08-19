@@ -6,9 +6,11 @@
     hello, world
     <script>
       var g1;
+      var g2;
       function setup(){
       createCanvas(400, 400);
         g1 = createGraphics(400, 400);
+        g2 = createGraphics(400, 400);
       }
       var draw = function(){
     
@@ -32,6 +34,10 @@
         g1.background(196, 139, 94);
         g1.ellipse(200, 314, 20, 75);
         image(g1, 200, 200, 200, 200);
+        
+        g2.background(19, 139, 9);
+        g2.ellipse(100, 214, 50, 75);
+        image(g2, 0, 200, 200, 200);
 };
     </script>  
   </body>   
