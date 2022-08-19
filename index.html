@@ -5,8 +5,10 @@
   <body>
     hello, world
     <script>
+      var g1;
       function setup(){
       createCanvas(400, 400);
+        g1 = createGraphics(400, 400);
       }
       var draw = function(){
     
@@ -27,6 +29,9 @@
         background(255, 0, 247);
         
     }
+        g1.background(196, 139, 94);
+        g1.ellipse(200, 314, 20, 75);
+        image(g1, 200, 200, 200, 200);
 };
     </script>  
   </body>   
