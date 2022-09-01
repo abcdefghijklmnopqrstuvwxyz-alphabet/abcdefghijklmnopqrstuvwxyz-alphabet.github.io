@@ -31,8 +31,8 @@
         
       }
       
-      g1 = createGraphics(600, 600);
-        g2 = createGraphics(600, 600);
+      //g1 = createGraphics(600, 600);
+       // g2 = createGraphics(600, 600);
       var colourfulBackground = function(){
           //the top left corner
         if(mouseX < 200 && mouseY < 200){
@@ -54,34 +54,34 @@
       }; 
         var drawHead = function() {
           noStroke();
-          g1.fill(255, 153, 143);
-          g1.rect(40, 40, 320, 320);
-          g1.fill(0, 0, 0);
+          fill(255, 153, 143);
+          rect(40, 40, 320, 320);
+          fill(0, 0, 0);
       };
       
 
         var drawFace = function() {
 
-          g1.fill(255, 255, 255);
-          g1.rect(120, 139, 40, 40);
-          g1.rect(240, 139, 40, 40);
-          g1.fill(0, 3, 5);
-          g1.rect(80, 139, 40, 40);
-          g1.rect(280, 139, 40, 40);
-          g1.fill(217, 128, 128);
-          g1.rect(167, 278, 70, 50);
-          g1.fill(110, 29, 29);
-          g1.rect(167, 296, 15, 15);
-          g1.rect(222, 296, 15, 15);
-          g1.fill(255, 153, 153);
-          g1.rect(181, 296, 42, 15);
+          fill(255, 255, 255);
+          rect(120, 139, 40, 40);
+          rect(240, 139, 40, 40);
+          fill(0, 3, 5);
+          rect(80, 139, 40, 40);
+          rect(280, 139, 40, 40);
+          fill(217, 128, 128);
+          rect(167, 278, 70, 50);
+          fill(110, 29, 29);
+          rect(167, 296, 15, 15);
+          rect(222, 296, 15, 15);
+          fill(255, 153, 153);
+          rect(181, 296, 42, 15);
       };
       
       var draw = function(){
           colourfulBackground();
           drawHead();
           drawFace();
-          image(g1, 0, 300, 300, 300);
+          //image(g1, 0, 300, 300, 300);
         
 
 };
