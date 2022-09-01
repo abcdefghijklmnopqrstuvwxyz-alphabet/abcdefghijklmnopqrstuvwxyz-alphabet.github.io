@@ -28,9 +28,11 @@
       var g2;
       function setup(){
       createCanvas(windowWidth, windowHeight);
-        g1 = createGraphics(600, 600);
-        g2 = createGraphics(600, 600);
+        
       }
+      
+      g1 = createGraphics(600, 600);
+        g2 = createGraphics(600, 600);
       var colourfulBackground = function(){
           //the top left corner
         if(mouseX < 200 && mouseY < 200){
@@ -50,8 +52,7 @@
 
         }
       }; 
-   /*TO DO: figure out what the heck is going on
-        g1.drawHead = function() {
+        var drawHead = function() {
           noStroke();
           g1.fill(255, 153, 143);
           g1.rect(40, 40, 320, 320);
@@ -59,7 +60,7 @@
       };
       
 
-        g1.drawFace = function() {
+        var drawFace = function() {
 
           g1.fill(255, 255, 255);
           g1.rect(120, 139, 40, 40);
@@ -75,11 +76,11 @@
           g1.fill(255, 153, 153);
           g1.rect(181, 296, 42, 15);
       };
-      */
+      
       var draw = function(){
           colourfulBackground();
-          g1.drawHead();
-          g1.drawFace();
+          drawHead();
+          drawFace();
           image(g1, 0, 300, 300, 300);
         
 
